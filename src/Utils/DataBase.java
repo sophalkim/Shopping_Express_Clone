@@ -103,11 +103,11 @@ public class DataBase {
 		      while ( rs.next() ) {
 		         int id = rs.getInt("id");
 		         String  name = rs.getString("name");
-		         int price  = rs.getInt("price");
+		         float price  = rs.getFloat("price");
 		         int image = rs.getInt("image");
 		         System.out.println( "ID = " + id );
 		         System.out.println( "NAME = " + name );
-		         System.out.println( "PRICE = " + price );
+		         System.out.println( "PRICE = $" + price );
 		         System.out.println( "IMAGE = " + image );
 		         System.out.println();
 		      }
@@ -122,7 +122,7 @@ public class DataBase {
 	}
 	
 	public static void main(String[] args) {
-		addProducts();
+		selectProducts();
 	}
 
 }

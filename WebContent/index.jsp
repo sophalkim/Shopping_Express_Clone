@@ -163,10 +163,10 @@
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/pepsi.jpg" width="171px" height="180px">
-		    			<a href="#" class="btn btn-success pull-right" role="button">		
-		    				Add
-			        		<span class="glyphicon glyphicon-plus"></span>
-			        	</a>
+			    			<a href="#" class="btn btn-success pull-right" role="button">		
+			    				$4.99
+				        		<span class="glyphicon glyphicon-plus"></span>
+				        	</a>
 		  			</div>
 				</div>
 			</div>
@@ -179,7 +179,7 @@
 		  			<div class="panel-body">
 		    			<img src="images/jeans.jpg" width="171px" height="180px">
 		    			<a href="CustomerInformation" class="btn btn-success pull-right" role="button">		
-		    				Add
+		    				$24.99
 			        		<span class="glyphicon glyphicon-plus"></span>
 			        	</a>
 		  			</div>
@@ -194,7 +194,7 @@
 		  			<div class="panel-body">
 		    			<img src="images/cat_food.jpg" width="171px" height="180px">
 		    			<a href="#" class="btn btn-success pull-right" role="button">		
-		    				Add
+		    				$1.99
 			        		<span class="glyphicon glyphicon-plus"></span>
 			        	</a>
 		  			</div>
@@ -209,7 +209,7 @@
 		  			<div class="panel-body">
 		    			<img src="images/pizza.jpg" width="171px" height="180px">
 		    			<a href="#" class="btn btn-success pull-right" role="button">		
-		    				Add
+		    				$3.99
 			        		<span class="glyphicon glyphicon-plus"></span>
 			        	</a>
 		  			</div>
