@@ -1,4 +1,5 @@
 <!doctype>
+<%@ page import="Utils.DataBase" %>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -204,7 +205,10 @@
 			<div class="col-xs-6 col-md-3">
 				<div class="panel panel-info">
 		  			<div class="panel-heading">
-		    			<h3 class="panel-title">Pizza</h3>
+		    			<h3 class="panel-title">
+		    				<% DataBase db = new DataBase(); %>
+		    					<%= db.hi()%>
+		    			</h3>
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/pizza.jpg" width="171px" height="180px">

@@ -121,8 +121,36 @@ public class DataBase {
 		    System.out.println("Operation done successfully");
 	}
 	
+	public static String displayProduct() {
+		connect();
+		stmt = null;
+		String x = "";
+		try {
+		      stmt = c.createStatement();
+		      ResultSet rs = stmt.executeQuery( "SELECT * FROM PRODUCT;" );
+		      while ( rs.next() ) {
+		         int id = rs.getInt("id");
+		         String  name = rs.getString("name");
+		         float price  = rs.getFloat("price");
+		         int image = rs.getInt("image");
+		         x = name;
+		      }
+		      rs.close();
+		      stmt.close();
+		      c.close();
+		    } catch ( Exception e ) {
+		      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+		      System.exit(0);
+		    }
+		return x;
+	}
+	
+	public String hi() {
+		return "hi";
+	}
+	
 	public static void main(String[] args) {
-		selectProducts();
+		System.out.println(displayProduct());
 	}
 
 }
