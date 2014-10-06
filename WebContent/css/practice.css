@@ -1,0 +1,17 @@
+#showText {
+	display: none;
+}
+
+#bodyContainer {
+	padding-top: 70px;
+}
+
+#navigationText {
+	font-weight: bold;
+	font-size: 25px;
+	font-family: "Arial";
+}
+
+span.glyphicon-shopping-cart {
+	font-size: 1.75em;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Google_Shopping_Express_Clone</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>CustomerInformation</servlet-name>
+    <servlet-class>CustomerInformation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerInformation</servlet-name>
+    <url-pattern>/CustomerInformation</url-pattern>
+  </servlet-mapping>
+</web-app>
