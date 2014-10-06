@@ -165,13 +165,13 @@
 				<div class="panel panel-info">
 		  			<div class="panel-heading">
 		    			<h3 class="panel-title">
-		    				Pepsi
+		    				<%= db.getName(11)%>
 		    			</h3>
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/pepsi.jpg" width="171px" height="180px">
 			    			<a href="#" class="btn btn-success pull-right" role="button">		
-			    				$4.99
+			    				<%= db.getPrice(11)%>
 				        		<span class="glyphicon glyphicon-plus"></span>
 				        	</a>
 		  			</div>
@@ -182,13 +182,13 @@
 				<div class="panel panel-info">
 		  			<div class="panel-heading">
 		    			<h3 class="panel-title">
-		    				Jean
+		    				<%= db.getName(12)%>
 		    			</h3>
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/jeans.jpg" width="171px" height="180px">
 		    			<a href="CustomerInformation" class="btn btn-success pull-right" role="button">		
-		    				$24.99
+		    				<%= db.getPrice(12)%>
 			        		<span class="glyphicon glyphicon-plus"></span>
 			        	</a>
 		  			</div>
@@ -199,13 +199,13 @@
 				<div class="panel panel-info">
 		  			<div class="panel-heading">
 		    			<h3 class="panel-title">
-		    				Cat Food
+		    				<%= db.getName(13)%>
 		    			</h3>
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/cat_food.jpg" width="171px" height="180px">
 		    			<a href="#" class="btn btn-success pull-right" role="button">		
-		    				$1.99
+		    				<%= db.getPrice(13)%>
 			        		<span class="glyphicon glyphicon-plus"></span>
 			        	</a>
 		  			</div>
@@ -216,13 +216,13 @@
 				<div class="panel panel-info">
 		  			<div class="panel-heading">
 		    			<h3 class="panel-title">
-		    				<%= db.getName(11)%>
+		    				<%= db.getName(14)%>
 		    			</h3>
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/pizza.jpg" width="171px" height="180px">
 		    			<a href="#" class="btn btn-success pull-right" role="button">		
-		    				$3.99
+		    				<%= db.getPrice(14)%>
 			        		<span class="glyphicon glyphicon-plus"></span>
 			        	</a>
 		  			</div>

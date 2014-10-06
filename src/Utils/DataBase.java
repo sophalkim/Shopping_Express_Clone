@@ -167,12 +167,31 @@ public class DataBase {
 		      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
 		      System.exit(0);
 		    }
-		System.out.println("We got " + x);
+		return x;
+	}
+	
+	public static String getPrice(int productID) {
+		connect();
+		stmt = null;
+		String x = "";
+		try {
+		      stmt = c.createStatement();
+		      ResultSet rs = stmt.executeQuery( "SELECT * FROM PRODUCT WHERE id='" + productID + "';" );
+		      while ( rs.next() ) {
+		         x = "$" + rs.getFloat("price");
+		      }
+		      rs.close();
+		      stmt.close();
+		      c.close();
+		    } catch ( Exception e ) {
+		      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+		      System.exit(0);
+		    }
 		return x;
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(getName(13));
+		System.out.println(getPrice(13));
 	}
 
 }
