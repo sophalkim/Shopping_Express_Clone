@@ -8,6 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="css/practice.css">
 </head>
 <body>
+	
+	<% 
+		DataBase db = new DataBase();
+	%>
 
 	<nav class="navbar navbar-default navbar-inverse" role="navigation">
   <div class="container">
@@ -160,7 +164,9 @@
 			<div class="col-xs-6 col-md-3">
 				<div class="panel panel-info">
 		  			<div class="panel-heading">
-		    			<h3 class="panel-title">Pepsi</h3>
+		    			<h3 class="panel-title">
+		    				Pepsi
+		    			</h3>
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/pepsi.jpg" width="171px" height="180px">
@@ -175,7 +181,9 @@
 			<div class="col-xs-6 col-md-3">
 				<div class="panel panel-info">
 		  			<div class="panel-heading">
-		    			<h3 class="panel-title">Jeans</h3>
+		    			<h3 class="panel-title">
+		    				Jean
+		    			</h3>
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/jeans.jpg" width="171px" height="180px">
@@ -190,7 +198,9 @@
 			<div class="col-xs-6 col-md-3">
 				<div class="panel panel-info">
 		  			<div class="panel-heading">
-		    			<h3 class="panel-title">Cat Food</h3>
+		    			<h3 class="panel-title">
+		    				Cat Food
+		    			</h3>
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/cat_food.jpg" width="171px" height="180px">
@@ -206,10 +216,7 @@
 				<div class="panel panel-info">
 		  			<div class="panel-heading">
 		    			<h3 class="panel-title">
-		    				<% 
-		    					DataBase db = new DataBase();
-		    				%>
-		    					<%= db.displayProduct()%>
+		    				<%= db.getName(11)%>
 		    			</h3>
 		  			</div>
 		  			<div class="panel-body">

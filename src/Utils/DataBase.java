@@ -149,8 +149,30 @@ public class DataBase {
 		return "hi";
 	}
 	
+	public static String getName(int productID) {
+		connect();
+		stmt = null;
+		String x = "";
+		try {
+		      stmt = c.createStatement();
+		      ResultSet rs = stmt.executeQuery( "SELECT * FROM PRODUCT WHERE id='" + productID + "';" );
+		      while ( rs.next() ) {
+		         String name = rs.getString("name");
+		         x = name;
+		      }
+		      rs.close();
+		      stmt.close();
+		      c.close();
+		    } catch ( Exception e ) {
+		      System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+		      System.exit(0);
+		    }
+		System.out.println("We got " + x);
+		return x;
+	}
+	
 	public static void main(String[] args) {
-		System.out.println(displayProduct());
+		System.out.println(getName(13));
 	}
 
 }
