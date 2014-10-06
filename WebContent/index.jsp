@@ -97,8 +97,8 @@
 		      		<img src="images/jacket.jpg" alt="...">
 		      			<div class="caption">
 			        		<h3>Jacket</h3>
-			        		<p>This is a waterfall.</p>
-			        		<p><a href="#" class="btn btn-primary" role="button">		Shop Now 
+			        		<p>25%-35% off</p>
+			        		<p><a href="#" class="btn btn-primary" role="button">		Details 
 			        				<span class="glyphicon glyphicon-chevron-right"></span>
 			        			</a>
 			        		</p>
@@ -111,8 +111,8 @@
 		      		<img src="images/flower2.jpg" alt="...">
 		      			<div class="caption">
 			        		<h3>Flower</h3>
-			        		<p>This is a flower.</p>
-			        		<p><a href="#" class="btn btn-primary" role="button">		Shop Now 
+			        		<p>Fresh Flowers from our local farmers.</p>
+			        		<p><a href="#" class="btn btn-primary" role="button">		On Sale 
 			        				<span class="glyphicon glyphicon-chevron-right"></span>
 			        			</a>
 			        		</p>
@@ -124,9 +124,9 @@
 		    	<div class="thumbnail">
 		      		<img src="images/grocery.jpg" alt="..." >
 		      			<div class="caption">
-			        		<h3>Coin</h3>
-			        		<p>This is a coin.</p>
-			        		<p><a href="#" class="btn btn-primary" role="button">		Shop Now 
+			        		<h3>Groceries</h3>
+			        		<p>Have your Groceries delivered to your door.</p>
+			        		<p><a href="#" class="btn btn-primary" role="button">		Delivery 
 			        				<span class="glyphicon glyphicon-chevron-right"></span>
 			        			</a>
 			        		</p>
@@ -140,12 +140,6 @@
 		<br>
 
 		<!-- Best Sellers -->
-		
-		<form action="CustomerInformation">			
-			 Please enter a color <br>
-			<input type="text" name="color"size="20px">
-			<input type="submit" value="submit">						
-		</form>	
 		
 		<h3 id="h3Element">Best Sellers</h3>
 
@@ -226,11 +220,19 @@
 
 
 
+		<br>
+		<hr>
 
 
 
 
-
+		<!-- Servlet -->
+		
+		<form action="CustomerInformation">			
+			 Please enter a color <br>
+			<input type="text" name="color"size="20px">
+			<input type="submit" value="submit">						
+		</form>	
 
 
 

@@ -176,7 +176,8 @@ public class DataBase {
 		String x = "";
 		try {
 		      stmt = c.createStatement();
-		      ResultSet rs = stmt.executeQuery( "SELECT * FROM PRODUCT WHERE id='" + productID + "';" );
+		      ResultSet rs = stmt.executeQuery( 
+		      	"SELECT * FROM PRODUCT WHERE id='" + productID + "';" );
 		      while ( rs.next() ) {
 		         x = "$" + rs.getFloat("price");
 		      }
