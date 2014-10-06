@@ -90,16 +90,7 @@
 </nav>
 
 
-	<div class="container" id="bodyContainer">
-	
-		<% for (int i = 0; i < 4; i++)  {
-			%>
-			<h1>Hi, There</h1>
-			<%
-		}
-		%>
-		
-
+	<div class="container" id="bodyContainer">		
 		<div class="row">
 		  	<div class="col-sm-6 col-md-4">
 		    	<div class="thumbnail">
@@ -170,10 +161,10 @@
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/pepsi.jpg" width="171px" height="180px">
-			    			<a href="#" class="btn btn-success pull-right" role="button">		
-			    				<%= db.getPrice(11)%>
-				        		<span class="glyphicon glyphicon-plus"></span>
-				        	</a>
+			    			<button class="btn btn-success pull-right" id="buttonColor2">		
+		    					<%= db.getPrice(11)%>
+			        		<span class="glyphicon glyphicon-plus"></span>
+			        	</button>
 		  			</div>
 				</div>
 			</div>
@@ -187,10 +178,10 @@
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/jeans.jpg" width="171px" height="180px">
-		    			<a href="CustomerInformation" class="btn btn-success pull-right" role="button">		
+		    			<button class="btn btn-success pull-right" id="buttonColor3">		
 		    				<%= db.getPrice(12)%>
 			        		<span class="glyphicon glyphicon-plus"></span>
-			        	</a>
+			        	</button>
 		  			</div>
 				</div>
 			</div>
@@ -204,10 +195,10 @@
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/cat_food.jpg" width="171px" height="180px">
-		    			<a href="#" class="btn btn-success pull-right" role="button">		
+		    			<button class="btn btn-success pull-right" id="buttonColor4">		
 		    				<%= db.getPrice(13)%>
 			        		<span class="glyphicon glyphicon-plus"></span>
-			        	</a>
+			        	</button>
 		  			</div>
 				</div>
 			</div>
@@ -221,10 +212,10 @@
 		  			</div>
 		  			<div class="panel-body">
 		    			<img src="images/pizza.jpg" width="171px" height="180px">
-		    			<a href="#" class="btn btn-success pull-right" role="button">		
+		    			<button class="btn btn-success pull-right" id="buttonColor5">		
 		    				<%= db.getPrice(14)%>
 			        		<span class="glyphicon glyphicon-plus"></span>
-			        	</a>
+			        	</button>
 		  			</div>
 				</div>
 			</div>

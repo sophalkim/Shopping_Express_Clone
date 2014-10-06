@@ -17,12 +17,45 @@ buttonColor.click(function() {
 
 var allButton = $("#buttonColor2");
 allButton.click(function() {
-	if (allButton.hasClass("btn-primary")) {
-		allButton.removeClass("btn-primary");
+	if (allButton.hasClass("btn-success")) {
+		allButton.removeClass("btn-success");
 		allButton.addClass("btn-danger");
 	} else {
 		allButton.removeClass("btn-danger");
-		allButton.addClass("btn-primary");
+		allButton.addClass("btn-success");
+	}
+});
+
+var button3 = $("#buttonColor3");
+button3.click(function() {
+	if (button3.hasClass("btn-success")) {
+		button3.removeClass("btn-success");
+		button3.addClass("btn-danger");
+	} else {
+		button3.removeClass("btn-danger");
+		button3.addClass("btn-success");
+	}
+});
+
+var button4 = $("#buttonColor4");
+button4.click(function() {
+	if (button4.hasClass("btn-success")) {
+		button4.removeClass("btn-success");
+		button4.addClass("btn-danger");
+	} else {
+		button4.removeClass("btn-danger");
+		button4.addClass("btn-success");
+	}
+});
+
+var button5 = $("#buttonColor5");
+button5.click(function() {
+	if (button5.hasClass("btn-success")) {
+		button5.removeClass("btn-success");
+		button5.addClass("btn-danger");
+	} else {
+		button5.removeClass("btn-danger");
+		button5.addClass("btn-success");
 	}
 });
 
