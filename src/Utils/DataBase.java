@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class DataBase {
 
-	public static void connect() {
+	public void connect() {
 		Connection c = null;
 	    try {
 	      Class.forName("org.sqlite.JDBC");
@@ -15,15 +15,6 @@ public class DataBase {
 	      System.exit(0);
 	    }
 	    System.out.println("Opened database successfully");
-	}
-	
-	
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		connect();
 	}
 
 }
